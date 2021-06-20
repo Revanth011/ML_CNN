@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facial Attribute Recognition</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/button.min.css"
+      integrity="sha512-OD0ScwZAE5PCg4nATXnm8pdWi0Uk0Pp2XFsFz1xbZ7xcXvapzjvcxxHPeTZKfMjvlwwl4sGOvgJghWF2GRZZDw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+
+  <body>
+    <div class="proj">
+      <h1>Facial Attribute Recognition</h1>
+    </div>
+    <div class="container">
+      <form
+        class="upload"
+        action="/submit"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <div class="form-group">
+          <label class="upload-" for="pwd">Upload Your Image :</label>
+          <input
+            type="file"
+            class="form-control"
+            placeholder="Hours Studied"
+            name="my_image"
+            id="pwd"
+          />
+        </div>
+        <div class="submit">
+          <button class="ui pink basic button">Submit</button>
+        </div>
+      </form>
+      <div class="prediction">
+        {% if prediction %}
+        <div class="img">
+          <img src="{{img_path}}" height="200px" width="200px" class="img-1" />
+          <img src="{{img_path2}}" height="150px" width="150px" class="img-2" />
+        </div>
+        <h3>Model Prediction :</h3>
+        <ul>
+          <li id="emotion">Emotion/Expression - <i> {{prediction}} </i></li>
+          <li id="gender">Sex - <i> {{sex}} </i></li>
+        </ul>
+
+        {% endif %}
+
+        <h2><i> {{alert}} </i></h2>
+      </div>
+    </div>
+
+    <h4>Project by REVANTH LOKESH CHETHAN SRIKANTH</h4>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('11.jpg');
+    position: relative;
+    font-family: 'Lucida Sans Regular';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    background-color: rgb(240, 248, 255, 0.8);
+    background-repeat: no-repeat;
+    font-family: 'Lucida Sans Regular';
+    font-weight: 0;
+    border: 2px solid rgb(90, 90, 90);
+    padding: 22px;
+    border-radius: 6px;
+    margin-top: 80px;
+}
+
+.proj {
+    text-align: center;
+    position: absolute;
+    top: 0;
+}
+
+h1 {
+    font-family: 'Bangers', cursive;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 22px;
+}
+
+.img {
+    display: flex;
+    width: 360px;
+    height: 210px;
+    margin: 10px;
+    border: 2px solid rgb(90, 90, 90);
+    border-radius: 4px;
+}
+
+img.img-1 {
+    padding: 5px;
+}
+
+img.img-2 {
+    padding: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
